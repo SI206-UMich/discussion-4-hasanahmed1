@@ -2,7 +2,8 @@ class Rectangle():
     def __init__(self,width,height):
         self.width=width
         self.height=height
-
+    def __str__(self):
+        return f'A rectangle with width {self.width} and height {self.height}'
 def main():
     r = Rectangle(10, 10)
     print(r)
